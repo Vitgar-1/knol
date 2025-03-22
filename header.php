@@ -1,13 +1,13 @@
 <?php 
 
     $dr = $_SERVER['DOCUMENT_ROOT'];
-    include_once $dr.'/config.php';
+    include_once $dr.'/knol/config.php';
 
 ?>
 
-<link rel="stylesheet" href="/styles/style.css">
+<link rel="stylesheet" href="/knol/styles/style.css">
 <header>
-    <a class= "text" href = "/"><div class="logo">KNOL</div></a>
+    <a class= "text" href = "/knol"><div class="logo">KNOL</div></a>
     <div class="nav-buttons">
         <a href="#login">Войти</a>
         <a href="#register">Зарегистрироваться</a>

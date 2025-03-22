@@ -1,7 +1,7 @@
 <?php 
 
     $dr = $_SERVER['DOCUMENT_ROOT'];
-    require $dr.'/config.php';
+    require $dr.'/knol/config.php';
 
 ?>
 
@@ -36,7 +36,7 @@
 </head>
 <body>
 
-<?php include $dr.'/header.php'; ?>
+<?php include $dr.'/knol/header.php'; ?>
 
     <div class="svg-row">
         <?php
@@ -44,7 +44,7 @@
             for ($i=0;$i<100;$i++){
                 // echo $i;
                 echo '<div class="svg-container">';
-                include $dr.'/logic/pages/ww/ww_'.$i.'.svg';
+                include $dr.'/knol/logic/pages/ww/ww_'.$i.'.svg';
                 echo '</div>';
             }
 
