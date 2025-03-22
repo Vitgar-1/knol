@@ -25,10 +25,9 @@
         <button type="submit">Отправить</button>
     </form>
     <?php
-        echo 1:
+        echo 1;
     ?>
     
-
 
 
 
