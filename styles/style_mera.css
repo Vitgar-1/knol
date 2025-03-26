@@ -1,0 +1,13 @@
+.container_window {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.input_div_all {
+    position: relative;
+    float: left;
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+}

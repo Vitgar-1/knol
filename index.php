@@ -12,6 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KNOL - дешифрование метеорологического кода КН-01</title>
     <link rel="stylesheet" href="/knol/styles/style.css">
+
+    <link rel="stylesheet" href="/knol/styles/style_mera.css">
+
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 </head>
@@ -20,13 +23,23 @@
     <?php
 
     ?>
-    <form class="input-container" action="/knol/logic/test.php" method="POST">
-        <textarea name="userText" placeholder="Введите ваш текст здесь..." required></textarea>
-        <button type="submit">Отправить</button>
-    </form>
-    <?php
-        echo 1;
-    ?>
+
+    <section class="container_window">
+        <div class="input_div_all">
+            <form class="input-container" action="/knol/logic/test.php" method="POST">
+                <textarea name="userText" placeholder="Введите ваш текст здесь..." required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+            <?php
+                echo 1;
+            ?>
+        </div>
+   
+        <div class="window_all">
+
+        </div>
+
+    </section>
     
 
 
