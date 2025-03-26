@@ -1,10 +1,6 @@
 body {
     margin: 0;
-    /* font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    height: 100vh; */
+
 }
 
 header {
@@ -92,19 +88,3 @@ a.text {
   color: #666;
 }
 
-
-
-
-/* .container_window {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 100%;
-}
-.input_div_all {
-    position: relative;
-    float: left;
-    width: 40%;
-    height: 100%;
-    box-sizing: border-box;
-} */
