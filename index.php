@@ -30,12 +30,6 @@
                 <textarea name="userText" placeholder="Введите ваш текст здесь..." required></textarea>
                 <button type="submit">Отправить</button>
             </form>
-            <?php
-                echo 1;
-        
-            echo 2;
-
-            ?>
         </div>
    
         <div class="window_all">
