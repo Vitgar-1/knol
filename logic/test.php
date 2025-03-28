@@ -2,7 +2,7 @@
 
     $dr = $_SERVER['DOCUMENT_ROOT'];
     require $dr.'/knol/config.php';
-
+    include $dr.'/knol/logic/decoding.php';
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +38,7 @@
 
 <?php include $dr.'/knol/header.php'; ?>
 
-    <div class="svg-row">
+    <!-- <div class="svg-row">
         <?php
             
             for ($i=0;$i<100;$i++){
@@ -49,6 +49,10 @@
             }
 
         ?>
-    </div>
+    </div> -->
+    
+        
+
+
 </body>
 </html>
