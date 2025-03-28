@@ -1,6 +1,6 @@
 <?php
 
-    $groups = ['222', 'ICE', '333', '444', '555'];
+    $groups = ['ICE', '333', '444', '555'];
 
 
     // Первичная разбивка введённого текста на отдельные коды по "станциям" 
@@ -18,38 +18,49 @@
     }
     // dataprint($KH01);
 
-    function splitByGroups($array, $groups)
+    function splitByGroups(array $array, array $groups): array
     {
-        $result = [];
-        $currentKey = null;
-        $groupValues = [];
+        $result = [
+            '0' => [],      // Группа для первого элемента и его значений
+            '222' => [],    // Все элементы начинающиеся с 222
+        ];
         
-        foreach ($array as $item) {
-            if (in_array($item, $groups, true)) {
-                if ($currentKey !== null) {
-                    $result[$currentKey] = $groupValues;
-                    $groupValues = [];
-                }
-                $currentKey = $item;
-            } else {
-                if ($currentKey === null) {
-                    $currentKey = $item;
-                } else {
-                    $groupValues[] = $item;
-                }
+        // Добавляем остальные группы из списка
+        foreach($groups as $g) {
+            if($g !== '222') $result[$g] = [];
+        }
+    
+        $currentGroup = '0'; // Начинаем с группы 0
+        $result[$currentGroup][] = $array[0]; // Добавляем первый элемент
+        
+        // Обрабатываем остальные элементы начиная с индекса 1
+        for($i = 1; $i < count($array); $i++) {
+            $item = $array[$i];
+            $is222 = str_starts_with($item, '222');
+            $isGroup = in_array($item, $groups, true) || $is222;
+    
+            if($is222) {
+                // Добавляем в группу 222
+                $currentGroup = '222';
+                $result[$currentGroup][] = $item;
+            } 
+            elseif(in_array($item, $groups, true)) {
+                // Для других групп (333, 555 и т.д.)
+                $currentGroup = $item;
+            } 
+            else {
+                // Добавляем элемент в текущую группу
+                $result[$currentGroup][] = $item;
             }
         }
         
-        if ($currentKey !== null && !empty($groupValues)) {
-            $result[$currentKey] = $groupValues;
-        }
-        
-        return $result;
+        // Удаляем пустые группы
+        return array_filter($result, fn($v) => !empty($v));
     }
 
     $byGroup = [];
     foreach ($KH01 as $code) {
         $byGroup[] = splitByGroups($code, $groups);
     }
-    //dataprint($byGroup[10]);
+    dataprint($byGroup);
 ?>
