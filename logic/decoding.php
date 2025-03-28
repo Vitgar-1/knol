@@ -51,5 +51,5 @@
     foreach ($KH01 as $code) {
         $byGroup[] = splitByGroups($code, $groups);
     }
-    dataprint($byGroup[10]);
+    //dataprint($byGroup[10]);
 ?>
