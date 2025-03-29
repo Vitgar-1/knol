@@ -34,9 +34,10 @@
         }
     </style>
 </head>
-<body>
 
 <?php include $dr.'/knol/header.php'; ?>
+<body>
+
 
     <!-- <div class="svg-row">
         <?php
