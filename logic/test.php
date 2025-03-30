@@ -34,22 +34,44 @@
         }
     </style>
 </head>
-<body>
 
 <?php include $dr.'/knol/header.php'; ?>
+<body>
 
-    <!-- <div class="svg-row">
+
+    <div class="svg-row">
         <?php
             
-            for ($i=0;$i<100;$i++){
-                // echo $i;
-                echo '<div class="svg-container">';
-                include $dr.'/knol/logic/pages/ww/ww_'.$i.'.svg';
-                echo '</div>';
-            }
-
+            // foreach($KH01 as $num => $code){
+            //     foreach($code as $key => $value){
+            //         switch($key){
+            //             case 'Ch':
+            //                 if ($value == 0){break;}
+            //                 echo $num.'<br>';
+            //                 echo '<div class="svg-container">';
+            //                 include $dr.'/knol/logic/pages/Ch/Ch_'.$value.'.svg';
+            //                 echo '</div>';
+            //                 break;
+            //             case 'Cl':
+            //                 if ($value == 0){break;}
+            //                 echo $num.'<br>';
+            //                 echo '<div class="svg-container">';
+            //                 include $dr.'/knol/logic/pages/Cl/Cl_'.$value.'.svg';
+            //                 echo '</div>';
+            //                 break;
+            //             case 'Cm':
+            //                 if ($value == 0){break;}
+            //                 echo $num.'<br>';
+            //                 echo '<div class="svg-container">';
+            //                 include $dr.'/knol/logic/pages/Cm/Cm_'.$value.'.svg';
+            //                 echo '</div>';
+            //                 break;
+            //         }
+                    
+            //     }
+            // }
         ?>
-    </div> -->
+    </div>
     
         
 
