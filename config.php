@@ -47,15 +47,33 @@ function customExceptionHandler($exception) {
 
 set_exception_handler('customExceptionHandler');
 
-// Функция для вывода данных массива
 function dataprint($array) {
-    // Преобразуем массив в строку JSON
-    $data = json_encode($array);
-
-    // Вызываем JavaScript функцию для отображения данных
-    echo "<script>showErrorWithData(" . $data . ");</script>";
+    $data = formatArray($array);
+    echo "<script>showErrorWithData(" . json_encode($data) . ");</script>";
 }
 
+function formatArray($array, $level = 0) {
+    $indent = str_repeat('    ', $level);
+    $result = "Array\n{$indent}(\n";
+    
+    foreach ($array as $key => $value) {
+        $entryIndent = str_repeat('    ', $level + 1);
+        
+        if (is_array($value)) {
+            $subArray = formatArray($value, $level + 1);
+            $result .= "{$entryIndent}[{$key}] => {$subArray}";
+        } else {
+            // Убираем кавычки у числовых значений
+            $formattedValue = (is_string($value) && is_numeric($value)) 
+                ? $value 
+                : var_export($value, true);
+            $result .= "{$entryIndent}[{$key}] => {$formattedValue}\n";
+        }
+    }
+    
+    $result .= "{$indent})\n";
+    return $result;
+}
 ?>
 
 <div id="error-block" class="error-block">
@@ -156,11 +174,9 @@ function showError(message) {
 }
 
 function showErrorWithData(data) {
-    showError(''); // Отображаем окно ошибки без сообщения об ошибке
+    showError('');
     const dataContainer = document.getElementById('data-container');
-
-    // Добавляем новые данные в контейнер
-    dataContainer.innerHTML += `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+    dataContainer.innerHTML += `<pre>${data}</pre>`;
 }
 
 
