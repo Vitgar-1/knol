@@ -11,3 +11,121 @@
     height: 100%;
     box-sizing: border-box;
 }
+.window_all {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 2em;
+}
+.pfw {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.block_pf {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: .1em solid black;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.window_shema {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.window_shema_left {
+    position: relative;
+    float: left;
+    width: 35%;
+}
+.window_shema_right {
+    position: relative;
+    float: left;
+    width: 35%;
+}
+.window_shema_center {
+    position: relative;
+    float: left;
+    width: 10%;
+}
+.window_shema_center_C_N {
+    position: relative;
+    float: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .5em;
+}
+.window_shema p {
+    font-size: .5em;
+    padding-top: 1em;
+}
+.w100 {
+    width: 100%;
+}
+.window_shema_center_CH, .window_shema_center_CM, .window_shema_center_N, .window_shema_center_N {
+    width: 2em;
+    display: flex;
+    height: 2em;
+}
+.window_shema_left_SnTTT, .window_shema_left_Sn_Td_Td_Td, .window_shema_left_Sn_Tw_Tw_Tw {
+    display: flex;
+    justify-content: space-evenly;
+    height: 2em;
+}
+.window_shema_left_SnTTT {
+    margin-top: 2.5em;
+}
+.window_shema_left_W_W {
+    position: relative;
+    float: right;
+    height: 3em;
+    width: 3em;
+    display: flex;
+}
+.window_shema_left_V_V {
+    left: 3.3em;
+    height: 2em;
+    width: 3em;
+}
+.window_shema_right_PPP_big, .window_shema_right_PPP_mini, .window_shema_right_Vs_Vs, .window_shema_right_a  {
+    height: 2em;
+    justify-content: space-evenly;
+}
+.window_shema_right_PPP_big {
+    margin-top: 2.5em;
+}
+.window_shema_right_a  {
+    top: 4.5em;
+    left: 100%;
+    width: 2em;
+    position: absolute;
+}
+.window_shema_right_W1_W2_right {
+    width: 70%;
+    height: 3em;
+}
+.window_shema_right_N_right {
+    width: 30%;
+    height: 2em;
+    top: 1em;
+}
+.window_shema_right_h_hs_hs_right {
+    width: 6.3em;
+    height: 2em;
+}
+.window_shema_right_ds {
+    height: 2em;
+    width: 3em;
+}
+.window_shema_right_Vs_Vs {
+    height: 2em;
+    width: 70%;
+    left: 30%;
+}
