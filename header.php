@@ -1,7 +1,7 @@
 <?php 
 
     $dr = $_SERVER['DOCUMENT_ROOT'];
-    include_once $dr.'/knol/config.php';
+    // include_once $dr.'/knol/config.php';
 
 ?>
 

@@ -1,7 +1,7 @@
 <?php 
 
     $dr = $_SERVER['DOCUMENT_ROOT'];
-    require $dr.'/knol/config.php';
+    include $dr.'/knol/error_massage.php';
 
 ?>
 
@@ -18,10 +18,12 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 </head>
-    <?php include $dr.'/knol/header.php'; ?>
+    <?php include $dr.'/knol/header.php'; 
+    
+    ?>
 <body>
     <?php
-
+// dataprint(121312);
     ?>
 
     <section class="container_window">
@@ -141,7 +143,7 @@
         </div>
 
     </section>
-
+<?php error_masage();?>
 </body>
 
 </html>

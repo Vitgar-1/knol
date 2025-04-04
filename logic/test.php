@@ -1,7 +1,7 @@
 <?php 
 
     $dr = $_SERVER['DOCUMENT_ROOT'];
-    require $dr.'/knol/config.php';
+    // require $dr.'/knol/config.php';
     include $dr.'/knol/logic/decoding.php';
 ?>
 
