@@ -34,6 +34,110 @@
    
         <div class="window_all">
 
+            <div class="window_shema">
+                <div class="window_shema_left">
+                    <div class="window_shema_left_full">
+                        <div class="window_shema_left_SnTTT block_pf w100">
+                            <span>S</span>
+                            <p>n</p>
+                            <span>T</span>
+                            <span>T</span>
+                            <span>T</span>
+                        </div>
+                        <div class="window_shema_left_V_V block_pf">
+                            <span>V</span>
+                            <span>V</span>
+                        </div>
+                        <div class="window_shema_left_W_W block_pf">
+                            <span>W</span>
+                            <span>W</span>
+                        </div>
+                        <div class="window_shema_left_Sn_Td_Td_Td block_pf w100">
+                            <span>S</span>
+                            <p>n</p>
+                            <span>T</span>
+                            <p>d</p>
+                            <span>T</span>
+                            <p>d</p>
+                            <span>T</span>
+                            <p>d</p>
+                        </div>
+                        <div class="window_shema_left_Sn_Tw_Tw_Tw block_pf w100">
+                            <span>S</span>
+                            <p>n</p>
+                            <span>T</span>
+                            <p>w</p>
+                            <span>T</span>
+                            <p>w</p>
+                            <span>T</span>
+                            <p>w</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="window_shema_center">
+                    <div class="window_shema_center_C_N">
+                        <div class="window_shema_center_CH block_pf">
+                            <span>C</span>
+                            <p>H</p>
+                        </div>
+                        <div class="window_shema_center_CM block_pf">
+                            <span>C</span>
+                            <p>M</p>
+                        </div>
+                        <div class="window_shema_center_N block_pf">
+                            <span>N</span>
+                        </div>
+                        <div class="window_shema_center_N block_pf">
+                            <span>C</span>
+                            <p>L</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="window_shema_right">
+                    <div class="window_shema_right_full">
+                        <div class="window_shema_right_PPP_big block_pf w100">
+                            <span>P</span>
+                            <span>P</span>
+                            <span>P</span>
+                        </div>
+                        <div class="window_shema_right_PPP_mini block_pf w100">
+                            <span>p</span>
+                            <span>p</span>
+                            <span>p</span>
+                        </div>
+                        <div class="window_shema_right_a block_pf">
+                            <span>a</span>
+                        </div>
+                        <div class="window_shema_right_N_right block_pf">
+                            <span>N</span>
+                        </div>
+                        <div class="window_shema_right_W1_W2_right block_pf">
+                            <span>W</span>
+                            <p>1</p>
+                            <span>W</span>
+                            <p>2</p>
+                        </div>
+                        <div class="window_shema_right_h_hs_hs_right block_pf">
+                            <span>h</span>
+                            <p>s</p>
+                        </div>
+                        <div class="window_shema_right_ds block_pf">
+                            <span>D</span>
+                            <p>s</p>
+                        </div>
+                        <div class="window_shema_right_Vs_Vs block_pf">
+                            <span>V</span>
+                            <p>s</p>
+                            <span>V</span>
+                            <p>s</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
     </section>
